@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Brainiac</title>
+    <!-- Add your stylesheets here -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Add your JavaScript files here -->
+    <script src="script.js" defer></script>
+</head>
+
+<script> let bar = document.querySelector("#progress");
+    window.addEventListener("scroll", () => {
+      let max = document.body.scrollHeight - innerHeight;
+      bar.style.width = `${(window.scrollY / max) * 100}%`;
+    });
+  
+  </script>
+<body>
+    <!-- Add your header content here -->
+    <header>
+        
+        <div>
+            <img class="header_logo" src="img/Logos/Bitcoin_Brainiac_Logo.jpeg" alt="Bitcoin Brainaic Logo" id="header_logo_text">
+        </div>
+
+        <nav class="site_navigation">
+            <div class="log_in_link">
+                <a href="login.html">LOG IN</a>
+            </div>
+            <div class="social_media_icons">
+                <img src="" class="facebook_icon">
+                <img src="" class="instagram_icon">
+            </div>
+        </nav>
+    
+    </header>
+
+    <!-- Add your main content here -->
+    <main>
+
+        <!-- Scrolling Progress Bar-->
+        <div id="progressContainer">
+            <div id="progressBar"></div>
+          </div>
+
+
+        <div class="heros">
+
+            <!-- Hero 1 "The World's Favorite Bitcoin Newsletter"-->
+            <div id="hero_1" class="hero">
+                <div class="column_1">
+                    <div class="hero_1_copy">
+                        <h1 class="hero_1_title">The World's <span class="colored_word">Favorite</span> Bitcoin Newsletter</h1>
+                        <p class="hero_1_description">Everyday you'll get the most popular Bitcoin stories sent right to your inbox!</p>
+                    </div>
+                <div class="column_2">
+                    <div class="sign_up_box">
+                        <h1 class="sign_up_text_1">Sign up for FREE!</h1>
+                        <p class="sign_up_text_2">The Bitcoin Brainiac Newsletter is <span class="colored_word">100% free!</span></p>
+                        <form action="/submit_email" method="post">
+                            <input type="email" id="email" name="email" required placeholder="Email"><br><br>
+                            <input type="submit" value="Submit" class="submit_button">
+                        </form>
+                        <p class="email_disclaimer">
+                            We won't send spam. Unsubscribe at any time. 
+                        </p>
+                    </div>
+                </div>               
+            </div>
+
+            <!-- Hero 2 "Understand Bitcoin, Understand Web3"-->
+            <div class="hero" id="hero_2">
+                <div class="column_1">
+                    <div class="hero_2_copy">
+                        <h1 class="hero_2_title">Understand Bitcoin, Understand Web3.</h1>
+                        <p class="hero_2_description">Web3 is the next iteration of the net. The decentralized web is expected to create new industries in a disruptive era that will compare to the impact of the early internet.<br> Understanding Bitcoin's purpose and architecture is crucial to understanding the essence of Web3. </p>
+                        <button onclick="showPopup()">Learn Now</button>
+                    </div>
+                </div>
+                <div class="column_2">
+                    <img src ="img/Hero_2/Bitcoin_Brainiac_Promo_Image.webp" alt="Bitcoin_Brainiac_Promo_Devices" class="promo_devices">
+                </div>
+            </div>
+
+            <!-- Hero 3 "Welcome Video" -->
+            <div class="hero welcome_video_container" id="hero_3">
+                <div class="hero_3_copy" id="hero">
+                    <h1 class="hero_3_title">Learn Bitcoin in 10 Days</h1>
+                    <p class="hero_3_description">Click PLAY to watch the free workshop</p>
+                    <video class="welcome_video" controls>
+                        <source src="Videos/Homepage/Value Video_FX2.mp4" type="video/mp4">
+                        Your browswer does not support the video tag. 
+                    </video>
+                </div>
+            </div>
+
+            <!-- Hero 4 "Course Reviews" --> 
+            <div class="hero course_reviews" id="hero_4">
+                <div class="review_1">
+                    <img src="img/Course Reviews/5_stars.jpeg" alt="5 Stars" class="star_reviews">
+                    <p class="review_1_text">"I can't believe how well I was able to understand these concepts. I would have never imagined I would be able to grasp Bitcoin this well!" <br> -Loise C</p>
+                </div>
+
+                <div class="review_2">
+                    <img src="img/Course Reviews/5_stars.jpeg" alt="5 Stars" class="star_reviews">
+                    <p class="review_2_text">"Bon's ability to break down this complex topic of Bitcoin is incredible. After taking this course I was able to explain everything to my wife." <br> - Jeff E</p>
+                </div>
+
+                <div class="review_3">
+                    <img src="img/Course Reviews/5_stars.jpeg" alt="5 Stars">
+                    <p class="review_3_text">This is by far the best education I've found on Bitcoin! Bon makes it so fun and interesting! I've recommended to all of my friends! <br> - Chris D</p>
+            </div>
+            </div>
+
+            <!-- Hero 5 "Beome A Brainiac" - Newsletter Sign Up 1 -->
+            <div class="hero hero_newsletter" id="hero_5">
+                <div class="header_5_title">
+                    <H2 class="become_a_brainaic">BECOME A BRAINIAC<span class=yellow_period>.</span></H2>
+                    
+                </div>
+                <div class="email_signup_box">
+                    <H2 class="email_signup_title">FREE NEWSLETTER</H2>
+                    <H3 class="email_signup_description">BITCOIN NEWS DELIVERED DAILY</H3>
+                    <button class="learn-more">Learn More</button>
+                </div>
+            </div>
+
+            <!-- Hero 6 "Images of People" -->
+            <div class="hero" id="hero_6">
+                <div class="images_with_description">
+                    <div class="hero_6_description_1">
+                        <img src="img/Header_5/header_5_description_1.jpeg" alt="Woman holding Bitcoin over her eyes." class="description_image" id="description_image">
+                        <div class="hero_6_description_1_copy">
+                                <h1 class="hero_6_description_1_title">MASTER THE FUNDAMENTALS</h1>
+                                <h3 class="hero_6_description_1_subtitle">DIVE INTO THE FOUNDATION OF BITCOIN</h3>
+                                <p class="hero_6__descrtiption_1_description">In this course you'll learn Bitcoin's amazing history, ehy it exists, how it's diseupting multiple industries, and how it will change the world in the future.</p>
+                            </div>
+                    </div>
+                
+
+                    <div class="hero_6_description_2">
+                        <img src="img/Header_5/header_5_description_2.png" alt="Man holding Bitcoin" class="description_image" id="description_image">
+                            <div class="hero_6_description_2_copy">
+                                <h1 class="hero_6_description_2_title">WHERE TECH MEETS FINANCE</h1>
+                                <h3 class="hero_6_description_2_subtitle">BITCOIN WAS DESIGNED TO FIX MONEY</h3>
+                                <p class="hero_6_description_2_description">We'll cover the relationship between Bitcoin and government-issued currency. You'll learn how Bitcoin was designed to counteract inflation, and the best investment practices for growing your portfolio and protecting your wealth.</p>
+                            </div>
+                    </div>
+
+                    <div class="hero_6_description_3">
+                        <img src ="img/Header_5/header_5_description_3.jpeg" alt="Man holding Bitcoin over one eye" class="description_image" id="description_image">
+                            <div class="hero_6_description_3_copy">
+                                <h1 class="hero_6_description_3_title">LEARN ABOUT THE MECHANICS</h1>
+                                <h3 class="hero_6_description_3_subtitle">UNDERSTAND BITCOIN'S ENGINE</h3>
+                                <p class="hero_6_description_3_description">Bitcoin is way more than a store of value. It's a global monetary network that's a self-govered, technological marvel. Our lessons will make you a pro at what drives Bitcoin, what keeps it scarce, and keeps it secure.</p>
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Hero 7 "What You'll Learn" Expandale Lists-->
+            <div class="hero" id="hero_7">
+                <div class="What You'll Learn List">
+                    <h1 class="List_Title">What You'll Learn</h1>
+                    <div class="Expandable_List" id="expandableList">
+                        <h2 onclick="toggleList('expandableList1')">Day 1 | The History of Bitcoin</h2>
+                        <ul id="expandableList1" class="hidden">
+                            <li>1A. A Brief History of Bitcoin</li>
+                            <li>1B. Satoshi Nakamoto</li>
+                            <li>1C. Lawless Money</li>
+                            <li>1D. Bitcoin Gains Respect</li>
+                            <li>1E. Bitcoin Today</li>
+                        </ul>
+                    </div>
+                    <div class="Expandable_List" id="expandableList">
+                        <h2 onclick="toggleList('expandableList2')">Day 2 | Blockchain</h2>
+                        <ul id="expandableList2" class="hidden">
+                        <li>2A. Blockchain at a Glance</li>
+                        <li>2B. Wallets</li>
+                        <li>2C. Cryptographic Hash Functions</li>
+                        </ul>
+                    </div>
+                    <div class="Expandable_List" id="expandableList">
+                        <h2 onclick="toggleList('expandableList3')">Day 3 | Decentralization</h2>
+                        <ul id="expandableList3" class="hidden">
+                        <li>3A. Centralization vs. Decentralization</li>
+                        <li>3B. Transactions w/o Identity</li>
+                        <li>3C. Decentralized vs. Distributed Systems</li>
+                        </ul>
+                    </div>
+                    <div class="Expandable_List" id="expandableList">
+                        <h2 onclick="toggleList('expandableList4')">Day 4 | Mining</h2>
+                        <ul id="expandableList4" class="hidden">
+                        <li>4A. The Purpose of Mining</li>
+                        <li>4B. Proof-of-Work</li>
+                        <li>4C. Energy Consumption</li>
+                        <li>4E. Strategies</li>
+                        <li>4F. Halving</li>
+                        </ul>
+                    </div>
+                    <div class="Expandable_List" id="expandableList">
+                        <h2 onclick="toggleList('expandableList5')">Day 5 | Mechanics</h2>
+                        <ul id="expandableList5" class="hidden">
+                        <li>5A. Transactions</li>
+                        <li>5B. Scripts</li>
+                        <li>5C. Blocks</li>
+                        <li>5D. Network</li>
+                        <li>5E. Limitations</li>
+                        <li>5F. Layers</li>
+                        </ul>
+                    </div>
+                    <div class="Expandable_List" id="expandableList">
+                        <h2 onclick="toggleList('expandableList6')">Day 6 | Storage & Usage</h2>
+                        <ul id="expandableList6" class="hidden">
+                        <li>6A. Cold & Hot Storage</li>
+                        <li>6B. Wallets & Exchanges</li>
+                        <li>6C. Payments</li>
+                        <li>6D. Fees</li>
+                        </ul>
+                    </div>
+                    <div class="Expandable_List" id="expandableList">
+                        <h2 onclick="toggleList('expandableList7')">Day 7 | Forks & Alt-Coins</h2>
+                        <ul id="expandableList7" class="hidden">
+                        <li>7A. What is an Alt-Coin?</li>
+                        <li>6B. What is a Fork?</li>
+                        </ul>
+                    </div>
+                    <div class="Expandable_List" id="expandableList">
+                        <h2 onclick="toggleList('expandableList8')">Day 8 | Bitcoin as an Asset</h2>
+                        <ul id="expandableList8" class="hidden">
+                        <li>8A. Hedging Against Inflation</li>
+                        <li>6B. Risk & Return</li>
+                        <li>8C. Portfolio Theory</li>
+                        <li>Asset Allocation</li>
+                        </ul>
+                    </div>
+                    <div class="Expandable_List" id="expandableList">
+                        <h2 onclick="toggleList('expandableList9')">Day 9 | The Future of BTC</h2>
+                        <ul id="expandableList9" class="hidden">
+                        <li>9A. Bitcoin in Society</li>
+                        <li>9B. Bitcoin in Philanthropy</li>
+                        <li>9C. Bitcoin in Business</li>
+                        <li>9D. Bitcoin in Entertainment</li>
+                        <li>9F. Bitcoin in Economics</li>
+                        </ul>
+                    </div>
+                    <div class="Expandable_List" id="expandableList">
+                        <h2 onclick="toggleList('expandableList10')">Day 10 | Monetizing Your Knowledge</h2>
+                        <ul id="expandableList10" class="hidden">
+                        <li>10A. How to Build a Social Media Following</li>
+                        <li>10B. Your Email List</li>
+                        <li>10C. How to Create YouTube Content</li>
+                        <li>10D. How to Make a Podcast</li>
+                        <li>10E. How to Make a Blog</li>
+                        <li>10F. How to Consult Clients</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hero 8 "Enroll Today To Learn Bitcoin in 10 Days!" -->
+            <div class="hero" id="hero_8">
+                <div class="hero_8_title">
+                    <h1>ENROLL TODAY TO LEARN BITCOIN IN 10 DAYS!</h1> 
+                </div>
+                <div class="hero_8_image">
+                    <img src="img/Hero_7/Hero_7_Image.jpeg" alt="Statue with Bitcoin Eyes" class="hero_8_image">
+                </div>
+                    <div class="enroll_now_button">
+                    <a href="#heroPricing"><button>ENROLL NOW</button></a>
+                </div>
+            </div>
+
+            <!-- Hero 9 "Meet Your Course Instructor"-->
+            <div class="hero" id="hero_9">
+                <div class="hero_9_copy">
+                    <div class="hero_9_title">
+                        <h1>Meet Your Course Instructor</h1>
+                    </div>
+                    <div class="hero_9_description">
+                        <p>Bon Jenn is a seasoned crypto and Web3 educator and enthusiast. He's been in the spce for over five years, and has been sharing his knowledge through consulting and creating social media content. He currently has over 95,000 followers on his crypto education-themed TikTok.</p>
+                    </div>
+                </div>
+                <div class="hero_9_image">
+                    <img src="img/Hero_9/Bon.png" alt="Course Instructor Image" class="hero_9_image">
+                </div>
+
+            </div>
+
+            <!-- Hero 10 "Frequently Asked Questions"-->
+            <div class="hero" id="hero_10">
+                <div class="hero_10_title">
+                    <h1>Frequently Asked Questions</h1>
+                </div>
+                <div class="hero_10_questions">
+                    <div class="hero_10_row_1">
+                        <div class="expandable_list_11">
+                            <h2 onclick="toggleList('expandableList11')">How long do I have access to the program & when does it start?</h2>
+                            <p id="expandableList11" class="hidden">
+                                You'll have access to the program for life! Lessons start as soon as you sign up and can be accessed on any computer, tablet, or phone.
+                            </p>
+                        </div>
+                        <div class="expandable_list_12">
+                            <h2 onclick="toggleList('expandableList12')">Can't I learn all of this on YouTube?</h2>
+                            <p id="expandableList12" class="hidden">
+                                There are multiple helpful resources on YouTube, but a lot of valuable content is buried under scam videos, pump and dump content, and people who can't explain crypto in a way that's easy for beginners to understand. Bitcoin Brainiac will serve you the most important information, so you don't waste any of your valuable time watching content that won't be useful to you.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hero_10_row_2">
+                        <div class="expandable_list_13">
+                            <h2 onclick="toggleList('expandableList13')">What skill level is this program for?</h2>
+                            <p id="expandableList13" class="hidden">
+                                This program is aimed toward beginners, but can be used for all skill levels.
+                            </p>
+                        </div>
+                        <div class="expandable_list_14">
+                            <h2 onclick="toggleList('expandableList14')">Will I really learn enough to teach others?</h2>
+                            <p id="expandableList14" class="hidden">
+                                This program is aimed toward beginners, but can be used for all skill levels.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Hero 11 "All the Tools You Need to Learn Bitcoin, Fast!"-->
+            <div class="hero heroPricing" id="hero_11" id>
+                <div class="hero_11_title">
+                    <h1>All the Tools You Need to Learn Bitcoin, Fast!</h1>
+                </div>
+                <div class="hero_11_list">
+                    <ul>
+                        <li><b>Lifetime access</b>to the full course which includes 45 lessons!</li>
+                        <li><b>Quizzes</b>to help you retain knowledge</li>
+                        <li><b>Digital booklets</b>with notes for each module</li>
+                        <li><b>Access to message the course instructor</b>on Telegram 24/7 with course questions</li>
+                    </ul>
+                </div>
+
+                <!----Pricing Containers---->
+
+                <main class="main flow">
+                    <h1 class="main__heading">Pricing</h1>
+                    <div class="main__cards cards">
+                    <div class="cards__inner">
+                        <div class="cards__card card">
+                        <h2 class="card__heading">Month-to-Month</h2>
+                        <p class="card__price">$29</p>
+                        <ul role="list" class="card__bullets flow">
+                            <li>Access to standard workouts and nutrition plans</li>
+                            <li>Email support</li>
+                        </ul>
+                        <a href="#basic" class="card__cta cta">Enroll Now</a>
+                        </div>
+                
+                        <div class="cards__card card">
+                        <h2 class="card__heading">Pro</h2>
+                        <p class="card__price">$49</p>
+                        <ul role="list" class="card__bullets flow">
+                            <li>Access to advanced workouts and nutrition plans</li>
+                            <li>Priority Email support</li>
+                            <li>Exclusive access to live Q&A sessions</li>
+                        </ul>
+                        <a href="#pro" class="card__cta cta">Enroll Now</a>
+                        </div>
+                
+                        <div class="cards__card card">
+                        <h2 class="card__heading">Enterprise</h2>
+                        <p class="card__price"></p>
+                        <ul role="list" class="card__bullets flow">
+                            <li>Access to all premium workouts and nutrition plans</li>
+                            <li>24/7 Priority support</li>
+                            <li>1-on-1 virtual coaching session every month</li>
+                            <li>Exclusive content and early access to new features</li>
+                        </ul>
+                        <a href="#ultimate" class="card__cta cta">Book a Call</a>
+                        </div>
+                    </div>
+                    
+                    <div class="overlay cards__inner"></div>
+                </main>
+            </div>
+            <!-- Hero 12 "Become a Brainaic" - Newsletter Signup 2 -->
+            <div class="hero" id="hero_12">
+                <div class="hero_12_title">
+                    <h2 class="become_a_brainiac">BECOME A BRAINAIC.</h2>
+                </div>
+                <div class="email_signup_box">
+                    <p class="email_signup_title">FREE NEWSLETTER</p>
+                    <p class="email_signup_description">BITCOIN NEWS DELIVERED DAILY</p>
+                    <button class="learn-more">Learn More</button>
+                </div>
+            </div>
+
+            <!-- Hero 13 "Satisfaction Guarantee"-->
+            <div class="hero" id="hero_13">
+                <div class="hero_13_copy">
+                    <div class="hero_13_title">
+                        <h2>Is There a Gurantee?</h2>
+                    </div>
+                    <div class="hero_13_description">
+                        <p>Absolutely! Bitcoin Brainiac has a 7-Day Satisfication Guarantee. If you are not completely SATISFIED and ENLIGHTENED by the Learn Bitcoin in 10 Days Program, then contact us within 7 Days for a full refund, no questions asked! </p>
+                    </div>
+                </div>
+                <div class="hero_13_image">
+                    <img src="img/Hero 12/Satisfaction_Guarantee.webp" alt="satisfaction_gurantee_seal">
+                </div>
+            </div>
+        </div>
+
+            
+    
+    </main>
+
+    <!-- Add your footer content here -->
+    <footer>
+        <div class="footer hero" id="footer">
+            <img id="Bitcoin_Brainiac_Logo_Footer" src="imgLogos/Bitcoin_Brainiac_Logo.jpeg" alt="Bitcoin Brainiac Logo">
+            <div class="legal">
+                <p class="legal secion 1">
+                    © 2023 Bontent LLC <br>
+                    By visiting this page, you agree to terms and conditions, privacy policy & earnings disclaimer.<br>
+                    This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc. <br>
+                    DISCLAIMER: The sales figures stated on this landing page and discussed in the Learn Bitcoin in 10 Days program are the personal sales figures of the course instructor. Please understand these results are not typical. We’re not implying you’ll duplicate them (or do anything for that matter). The average person who buys “how to” information gets little to no results. We’re using these references for example purposes only. Your results will vary and depend on many factors including but not limited to your background, experience, and work ethic. All business entails risk as well as massive and consistent effort and action. If you’re not willing to accept that, please DO NOT PURCHASE LEARN BITCOIN IN 10 DAYS PROGRAM. <br>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

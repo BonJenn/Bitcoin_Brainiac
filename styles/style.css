@@ -1,0 +1,916 @@
+/* Entire Page Styling */
+
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap");
+
+p {
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.hidden {
+    display: none;
+  }
+
+#progress {
+    border-bottom: px solid #F1C411;
+    width: 0;
+    position: fixed;
+    top: 0; 
+    left: 0;
+  }
+
+  /* Style the progress container */
+#progressContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #f1f1f1;
+    z-index: 1000;
+  }
+  
+  /* Style the actual progress bar */
+  #progressBar {
+    height: 100%;
+    width: 0;
+    background-color: #F1C411;
+  }
+
+/* Header Styling */
+
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:20px 50px;
+    background: black;
+    border: solid;
+    border-color: black;
+}
+
+.site_navigation {
+    display: flex;
+    align-items: center;
+}
+
+.log_in_link a {
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.social_media_icons img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.header_logo {
+    height: 60px;
+    width: auto;
+}
+
+/* Body Styling */
+
+body {
+
+    min-width: 375px;
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+
+/* Hero 1 Styling */
+
+#hero_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black(255, 135, 141);
+    width: 100%;
+}
+
+
+.hero_1_copy {
+    font-size: 18px;
+    line-height: 0.5;
+}
+
+.hero_1_title {
+    font-size: 80px;
+    font-weight: bolder;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 80px;
+    padding:40px;
+    font-weight: 400;
+}
+
+.hero_1_title, .hero_1_description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    padding: 10;
+}
+
+#hero_1 .colored_word {
+    color:#F1C411;
+    font-weight:900;
+}
+
+.hero_1_description {
+    font-size: 23px;
+    margin-top: 10px;
+    font-weight: bolder;
+    padding: 40px;
+    line-height: 30px;
+}
+
+.hero_1_copy {
+    line-height: 10px;
+}
+
+#hero_1 .column_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.sign_up_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e5e5;
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    line-height: 0.3;
+    width: 70%;
+    transition: width 0.3s ease-in-out;
+    line-height: 30px;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.sign_up_text_1, .sign_up_text_2 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.sign_up_text_1 {
+    font-size: 40px;
+}
+
+.sign_up_text_2 {
+    font-size: 30px;
+}
+
+.submit_button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.email_disclaimer {
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+}
+
+
+/* Hero 2 Styling */
+
+#hero_2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F1C411;
+    padding: 70px;
+}
+
+@media screen and (max-width: 1000px) {
+    #hero_2 {
+        flex-direction: column; 
+        
+    }
+}
+
+#hero_2 .promo_devices {
+    width: 500px;
+    margin: 30px;
+}
+
+#hero_2 .column_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero_2 .column_2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#hero_2 button {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-color: black;
+    border: none;
+    padding: 30px;
+    border-radius: 50px;
+    transition: width 0.3s ease;
+    width: 200px;
+}
+
+#hero_2 button:hover {
+    width: 300px;
+}
+
+.hero_2_title {
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+/* Hero 3 Styling*/
+
+.welcome_video_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    
+  
+  
+    background-color: #949494;
+    border: none;
+    border-radius: 0%;
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    
+}
+
+.hero_3_title {
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.hero_3_description {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hero_3_title, .hero_3_description, .welcome_video {
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.welcome_video {
+    max-width: 100%;
+   
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+/* Hero 4 Styling */
+
+#hero_4 {
+    display: flex;
+    justify-content: space-between; /* distribute reviews horizontally */
+    background-color: white;
+    border-radius: 50px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.review_1, .review_2, .review_3 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+#hero_4 img {
+    width: 150px;
+    margin: 10px;
+}
+
+#hero_4 p {
+    text-align: center;
+}
+
+/* Media Query for screens under 1000 pixels */
+@media (max-width: 1000px) {
+    #hero_4 {
+        flex-direction: column; /* stack reviews vertically */
+        align-items: center; /* center reviews horizontally */
+    }
+}
+
+
+/* Hero 5 Styling */
+
+#hero_5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+
+}
+
+.become_a_brainaic  {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+
+}
+
+.yellow_period {
+    color:#F1C411;
+}
+
+
+#hero_5 .email_signup_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid;
+    border-color: #F1C411;
+    border-width: 10px;
+    padding: 10px;
+    flex: 1;
+    flex-shrink: 1;
+    width: 500px;
+    margin: 20px;
+}
+
+.learn-more {
+    background-color: #F1C411;
+    color: black;
+}
+
+.learn-more:hover {
+    background-color: #F1C411;
+    color: white;
+}
+
+
+/* Hero 6 Styling */
+
+#hero_6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero_6 h1 {
+    color: green;
+    font-size: 50px;
+    font-weight:bolder;
+}
+
+.hero_6_description_1_copy, .hero_6_description_2_copy, .hero_6_description_3_copy {
+    padding: 40px;
+}
+
+.hero_6_description_1, .hero_6_description_2, .hero_6_description_3 {
+    display: flex;
+    flex-direction: row; /* Default for larger screens */
+}
+
+.description_image {
+    width: 30%; /* This is your default for larger screens. Change as necessary. */
+    margin: 20px;
+    border-radius: 10px;
+    min-width: 450px;
+
+    transition: transform 0.3s ease;
+}
+
+.description_image:hover {
+    transform: scale(0.9);
+}
+
+/* Media query for screen sizes under 1,000px */
+@media (max-width: 1000px) {
+    .hero_6_description_1, .hero_6_description_2, .hero_6_description_3 {
+        flex-direction: column; /* Stack image on top and description below */
+        align-items: center; /* To center the content horizontally */
+    }
+    
+    .description_image {
+        width: 70%; /* This will make image take full width when screen size is less than 1,000px */
+    }
+}
+
+
+/* Hero 7 Styling */
+
+#hero_7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+
+}
+
+#hero_7 h1 {
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 70px;
+}
+
+#hero_7 h2 {
+    cursor: pointer;
+}
+
+.Expandable_List {
+    background-color: white;
+    color: black;
+    padding: 2px 20px;
+    margin: 20px;
+    border-radius: 50px;
+    flex: 1;
+}
+
+.hidden {
+    max-height: 10;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+.expanded {
+    max-height: 400px; 
+    transition: max-height 1s;
+}
+
+
+/* Hero 8 Styling */
+
+#hero_8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F1C411;
+    color: black;
+    padding: 20px;
+    height: auto;
+}
+.hero_8_image {
+    width: 500px;
+    border-radius: 50px;   
+
+    /* This will animate any changes over 0.3 seconds */
+    transition: transform 0.3s ease;
+}
+
+/* This will enlarge the image by, say, 10% when hovered over */
+.hero_8_image:hover {
+    transform: scale(0.9);
+}
+
+button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+
+    color: white;
+    font-weight: bolder;
+    background-color: black;
+    border-orientation: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+}
+
+/* Hero 9 Styling */
+
+#hero_9 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.hero_9_copy {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero_9_copy {
+    width: 400px;
+}
+
+.hero_9_copy p {
+    font-size: 20px;
+}
+
+.hero_9_copy h1 {
+    font-size: 60px;
+}
+
+.hero_9_image img {
+    width: 400px;
+}
+
+/* Hero 10 Styling */
+
+#hero_10 {
+    color: white;
+    background-color:#F1C411
+}
+
+.hero_10_title {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+.hero_10_questions {
+    display: flex;
+    flex-wrap: wrap; /* Allows child elements to wrap onto the next line */
+    justify-content: space-between; /* Distributes the space between the columns */
+    align-items: center';
+    width: 90%;
+}
+
+/* Each row contains two expandable lists, making it 50% width minus some margin */
+.hero_10_row_1, .hero_10_row_2 {
+    width: 50%;
+    box-sizing: border-box; 
+    padding: 10px; 
+}
+
+/* This styles each individual expandable list. */
+.expandable_list_11, .expandable_list_12, .expandable_list_13, .expandable_list_14 {
+    width: 100%; /* Each list takes up the full width of its parent row */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 10px; /* Space between lists in the same column */
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: black;
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+/* Hero 11 Stying */
+
+#hero_11 {
+    display: flex;
+    align-items: center;
+    display: grid;
+    place-items: center;
+    font-family: "League Spartan", system-ui, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+
+#hero_11 .pricing, .pricing-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.box {
+    width: 35%;
+    padding: 40px 20px;
+    margin: 0 15px;
+    flex-direction: column;
+    flex: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.box-title,
+.box-button,
+.box-price {
+    margin-bottom: 20px;
+}
+
+.box-price {
+    font-size: 50px;
+    color: orange;   
+}
+
+.pricing-container {
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+}
+
+@media (max-width: 1000px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+
+main .flow {
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 10px;
+  width: 90%;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100vh;
+}
+
+
+ul {
+  list-style: none;
+}
+
+.main {
+  max-width: 75rem;
+  padding: 3em 1.5em;
+  background-color: black;
+}
+
+.main__heading {
+  font-weight: 600;
+  font-size: 2.25em;
+  margin-bottom: 0.75em;
+  text-align: center;
+  color: #eceff1;
+}
+
+.cards {
+  position: relative;
+}
+
+.cards__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5em;
+}
+
+.card {
+  --flow-space: 0.5em;
+  --hsl: var(--hue), var(--saturation), var(--lightness);
+  flex: 1 1 14rem;
+  padding: 1.5em 2em;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  align-items: start;
+  gap: 1.25em;
+  color: #eceff1;
+  background-color: #2b2b2b;
+  border: 1px solid #eceff133;
+  border-radius: 15px;
+}
+
+.card:nth-child(1) {
+  --hue: 165;
+  --saturation: 82.26%;
+  --lightness: 51.37%;
+}
+
+.card:nth-child(2) {
+  --hue: 291.34;
+  --saturation: 95.9%;
+  --lightness: 61.76%;
+}
+
+.card:nth-child(3) {
+  --hue: 338.69;
+  --saturation: 100%;
+  --lightness: 48.04%;
+}
+
+.card__bullets {
+  line-height: 1.4;
+}
+
+.card__bullets li::before {
+  display: inline-block;
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='16' title='check' fill='%23dddddd'%3E%3Cpath d='M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z' /%3E%3C/svg%3E");
+  transform: translatey(0.25ch);
+  margin-right: 1ch;
+}
+
+.card__heading {
+  font-size: 1.05em;
+  font-weight: 600;
+}
+
+.card__price {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1.25em);
+}
+
+.cta {
+  display: block;
+  align-self: end;
+  margin: 1em 0 0.5em 0;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0d0d0d;
+  padding: 0.7em;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  user-select: none;
+  opacity: var(--opacity, 0);
+  -webkit-mask: radial-gradient(
+    25rem 25rem at var(--x) var(--y),
+    #000 1%,
+    transparent 50%
+  );
+  mask: radial-gradient(
+    25rem 25rem at var(--x) var(--y),
+    #000 1%,
+    transparent 50%
+  );
+  transition: 400ms mask ease;
+  will-change: mask;
+}
+
+.overlay .card {
+  background-color: hsla(var(--hsl), 0.15);
+  border-color: hsla(var(--hsl), 1);
+  box-shadow: 0 0 0 1px inset hsl(var(--hsl));
+}
+
+.overlay .cta {
+  display: block;
+  grid-row: -1;
+  width: 100%;
+  background-color: hsl(var(--hsl));
+  box-shadow: 0 0 0 1px hsl(var(--hsl));
+}
+
+:not(.overlay) > .card {
+  transition: 400ms background ease;
+  will-change: background;
+}
+
+:not(.overlay) > .card:hover {
+  --lightness: 95%;
+  background: hsla(var(--hsl), 0.1);
+}
+
+  
+
+/* Hero 12 Stying */
+
+#hero_12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.become_a_brainiac  {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+
+.yellow_period {
+    color:#F1C411;
+}
+
+
+#hero_12 .email_signup_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid;
+    border-color: #F1C411;
+    border-width: 10px;
+    padding: 10px;
+    flex: 1;
+    flex-shrink: 1;
+    width: 500px;
+    margin: 20px;
+    
+}
+
+
+/* Hero 13 Styling */
+
+#hero_13 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    width: 80%;   
+}
+
+.hero_13_copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+.hero_13_title {
+    font-size: 40px;
+    text-align: center; 
+}
+
+.hero_13_description {
+    font-size: 20px;
+    text-align: center;
+}
+
+.hero_13_image {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+
+
+/* Footer Styling */
+
+footer {
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
